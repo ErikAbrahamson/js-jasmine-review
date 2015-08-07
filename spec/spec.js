@@ -1,7 +1,9 @@
 var code = require('../js/main.js');
+var empty;
 
-// Problem 1
-// Write a function that takes three random numbers from 0 to 100 and returns the largest one.
+beforeEach(function() {
+  var empty = [];
+});
 
 describe('Problem 1', function() {
   it('should return the largest number', function() {
@@ -13,6 +15,13 @@ describe('Problem 1', function() {
 
 describe('Problem 2', function() {
   it('should generate a random number, returning an array of odd numbers to or from 40', function() {
-    expect(code.evenNumber()).toBe();
+    expect(code.oddNumber()).not.toBe(empty);
+  });
+});
+
+describe('even number function', function() {
+  it('should count from 0 to the random number with even ints', function() {
+    expect(code.evenNumber()).not.toBe(empty);
+
   });
 });
