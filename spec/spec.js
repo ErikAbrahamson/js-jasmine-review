@@ -10,3 +10,9 @@ describe('Problem 1', function() {
     expect(code.largestNumber([-1, -20, -3])).not.toBe(-20);
   });
 });
+
+describe('Problem 2', function() {
+  it('should generate a random number, returning an array of odd numbers to or from 40', function() {
+    expect(code.evenNumber()).toBe();
+  });
+});
