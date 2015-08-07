@@ -1,16 +1,16 @@
 var code = require('../js/main.js');
-var empty, checkEvenness;
+// var empty, checkEvenness;
 
-beforeEach(function() {
-  var empty = [];
-  var checkEvenness = function(n) {
-    if (n % 2 === 0) {
-      return true;
-    } else {
-      return false;
-    }
-  };
-});
+// beforeEach(function() {
+//   var empty = [];
+//   var checkEvenness = function(n) {
+//     if (n % 2 === 0) {
+//       return true;
+//     } else {
+//       return false;
+//     }
+//   };
+// });
 
 describe('Problem 1', function() {
   it('should return the largest number', function() {

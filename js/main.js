@@ -8,37 +8,39 @@ module.exports = {
     }
     return largest;
   },
-  oddNumber: function() {
+  oddNumber: function(random) {
     var newArray = [];
-    var random = Math.floor(Math.random() * 100 + 1);
-    if (random > 40) {
-      for (var i = random; i > 40; i--) {
-        if (i % 2 !== 0) {
+    if (random > 0 && random < 100) {
+      if (random > 40) {
+        for (var i = random; i > 40; i--) {
+          if (i % 2 !== 0) {
+            newArray.push(i);
+          }
+        }
+      } else {
+        for (var j = random; j < 40; j++) {
+          if (j % 2 !== 0) {
+            newArray.push(j);
+          }
+        }
+      }
+    return newArray;
+    }
+  },
+  evenNumber: function(random) {
+    var newArray = [];
+    if (random > 0 && random < 100) {
+      for (var i = 0; i < random; i++) {
+        if (i % 2 === 0) {
           newArray.push(i);
         }
       }
-    } else {
-      for (var j = random; j < 40; j++) {
-        if (j % 2 !== 0) {
-          newArray.push(j);
-        }
-      }
+      return newArray;
     }
-    return newArray;
   },
-  evenNumber: function() {
-    var newArray = [];
-    var random = Math.floor(Math.random() * 100 + 1);
-    for (var i = 0; i < random; i++) {
-      if (i % 2 === 0) {
-        newArray.push(i);
-      }
-    }
-    return newArray;
-  },
-  randomSum: function() {
+  randomSum: function(random) {
     var sum = 0;
-    var digits = (Math.floor(Math.random() * 10000 + 1)).toString();
+    var digits = random.toString();
     for (var i = 0; i < digits.length; digits++) {
       sum += +digits[i];
     }
