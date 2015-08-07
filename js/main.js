@@ -16,14 +16,14 @@ function evenNumber() {
   var newArray = [];
   var random = Math.floor(Math.random() * 100 + 1);
   if (random > 40) {
-    for (var i = random; i < 40; i--) {
+    for (var i = random; i > 40; i--) {
       if (i % 2 !== 0) {
         newArray.push(i);
       }
     }
   } else {
-    for (var j = 0; j < random; j++) {
-      if (j % 2 !== 2) {
+    for (var j = random; j < 40; j++) {
+      if (j % 2 !== 0) {
         newArray.push(j);
       }
     }
