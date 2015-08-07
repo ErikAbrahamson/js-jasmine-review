@@ -35,5 +35,13 @@ module.exports = {
       }
     }
     return newArray;
+  },
+  randomSum: function() {
+    var sum = 0;
+    var digits = (Math.floor(Math.random() * 10000 + 1)).toString();
+    for (var i = 0; i < digits.length; digits++) {
+      sum += +digits[i];
+    }
+    return sum;
   }
 };
